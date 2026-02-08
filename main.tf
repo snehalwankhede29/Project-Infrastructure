@@ -1,14 +1,12 @@
 provider "aws" {
   region = var.region
-  # access_key = var.access_key
-  # secret_key = var.secret_key
 }
 
 
 
 module "EKS" {
 #   Path to the EKS module
-  source = "/EKS"
+  source = "./modules/EKS"
 
 #   availability zones
   availability_zone_1 = var.availability_zone_1
@@ -26,7 +24,7 @@ module "EKS" {
 
 
 module "RDS" {
-  source = "/RDS"
+  source = "./modules/RDS"
 
   allocated_storage = var.allocated_storage
   max_allocated_storage = var.max_allocated_storage
@@ -37,7 +35,7 @@ module "RDS" {
 
 
 module "s3" {
-  source = "/S3"
+  source = "./modules/S3"
 
   bucket = var.bucket
 }
