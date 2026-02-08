@@ -8,10 +8,7 @@ module "EKS" {
 #   Path to the EKS module
   source = "./modules/EKS"
 
-#   availability zones
-  availability_zone_1 = var.availability_zone_1
-  availability_zone_2 = var.availability_zone_2
-
+  aws_eks_cluster_name = var.aws_eks_cluster_name
 #   EKS Node Group scaling 
   desired_size = var.desired_size
   max_size = var.max_size
