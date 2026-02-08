@@ -1,11 +1,3 @@
-
-# Availability Zones subnet 1
-variable "availability_zone_1" {}
-
-# Availability Zones subnet 2
-variable "availability_zone_2" {}
-
-
 # EKS Cluster name
 variable "aws_eks_cluster_name" {}
 
