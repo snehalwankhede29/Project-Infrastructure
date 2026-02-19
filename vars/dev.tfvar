@@ -1,0 +1,14 @@
+bucket = "my-first-bucket-for-frontend"
+
+name = "eks-cluster-role"
+node_group_name = "eks-node-group"
+desired_size = 1
+max_size = 2
+min_size = 1
+
+rds-name = "default-db-subnet-group-1"
+instance_class = "db.t3.micro"
+db_name = "mydb"
+username = "admin"
+password = "Redhat123"
+
