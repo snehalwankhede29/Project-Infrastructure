@@ -29,7 +29,7 @@ variable "min_size" {
 
 # RDS
 
-variable "name" {
+variable "rds-name" {
   default = "default-db-subnet-group-1"
 }
 

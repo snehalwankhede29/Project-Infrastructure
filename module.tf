@@ -13,7 +13,7 @@ module "aws_eks_cluster" {
 
 module "aws_RDS" {
   source = "./RDS"
-  name = var.name 
+  name = var.rds-name 
   instance_class = var.instance_class
   db_name = var.db_name
   username = var.username
