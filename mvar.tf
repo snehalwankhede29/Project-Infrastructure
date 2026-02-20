@@ -45,6 +45,3 @@ variable "password" {
   default = "Redhat123"
 }
 
-variable "instance_class" {
-  default = "db.t3.micro"
-}
